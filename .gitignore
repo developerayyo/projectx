@@ -1,3 +1,6 @@
 venv/
 settings.ini
 static/
+project/__pycache__/
+projectx/__pycache__/
+
