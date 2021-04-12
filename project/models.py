@@ -34,6 +34,9 @@ class Project(models.Model):
     darpartment = models.ForeignKey(Department, on_delete=models.PROTECT)
     document = models.FileField(upload_to="documents/", blank=False, null=False)
 
+    def get_document(self):
+        return self.document.url
+
     def __str__(self):
         return self.topic
 
